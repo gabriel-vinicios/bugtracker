@@ -85,5 +85,8 @@ function fetchIssues() {
 
     
   }
+  if(desc === '' || assignedTo === ''){
+    deleteIssue(id)
+  }
 }
  
