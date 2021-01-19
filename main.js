@@ -74,7 +74,7 @@ function fetchIssues() {
     var status = issues[i].status;
 
     issuesList.innerHTML +=   '<div class="well">'+
-                              '<h6>Issue ID: ' + id + '</h6>'+
+                              '<h6> ID do problema: ' + id + '</h6>'+
                               '<p><span class="label label-info">' + status + '</span></p>'+
                               '<h3>' + desc + '</h3>'+
                               '<p><span class="glyphicon glyphicon-time"></span> ' + severity + '</p>'+
@@ -82,5 +82,8 @@ function fetchIssues() {
                               '<a href="#" onclick="setStatusClosed(\''+id+'\')" class="btn btn-warning">Close</a> '+
                               '<a href="#" onclick="deleteIssue(\''+id+'\')" class="btn btn-danger">Delete</a>'+
                               '</div>';
+
+    
   }
 }
+ 
